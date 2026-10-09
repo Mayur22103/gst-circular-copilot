@@ -1,0 +1,24 @@
+[project]
+name = "gst-circular-copilot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mayur22103", email = "maxthakkar6200@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "httpx>=0.28.1",
+    "psycopg[binary]>=3.3.6",
+    "python-dotenv>=1.2.4",
+    "qdrant-client>=1.19.1",
+    "sqlalchemy>=2.1.4",
+]
+
+[project.scripts]
+gst-circular-copilot = "gst_circular_copilot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
