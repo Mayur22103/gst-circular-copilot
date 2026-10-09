@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Secrets
+.env
+
+# Big data files (stay on your laptop, not in git)
+data/raw/*
+data/parsed/*
+!data/raw/.gitkeep
+!data/parsed/.gitkeep
+
+# Editor / OS
+.vscode/
+.DS_Store
